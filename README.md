@@ -11,4 +11,7 @@ If you use Mozilla Firefox, you can use <a href="https://addons.mozilla.org/fire
 
 If you use Google Chrome, you can use  <a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl" target="_blank">Tampermonkey</a>.
 
-Once we have the script manager, simply copy and paste the .js to a new user script in the addon.  
+Once we have the script manager, simply copy and paste the .js to a new user script in the addon.
+
+## Reference
+[Invidious repository](https://github.com/omarroth/invidious)
