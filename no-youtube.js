@@ -27,7 +27,7 @@ j(document).ready(function ($) {
 function generateUrl(addressValue, target) {
   var splitstring = addressValue.split("youtube.com/");
   var url = "https://invidio.us/" + splitstring[splitstring.length -1];
-  location.href=url;
+  console.log("url: " + url);
   window.open(url, target);
 }
 
