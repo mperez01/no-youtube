@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name     no-youtube
 // @description		Replace youtube links to invisio.us 
-// @version  1.0.1
+// @version  1.0.2
 // @grant    none
 // @require        https://code.jquery.com/jquery-2.2.2.js
 // @run-at        document-end
