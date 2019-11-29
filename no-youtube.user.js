@@ -14,19 +14,22 @@ j(document).ready(function ($) {
   var shortURL = "youtu.be/";
 
   $('a').click(function (event) {
-    var addressValue = $(this).attr("href");
-    var target = $(this).attr("target");
-    console.log("target: " + target);
-    if (event.ctrlKey || event.metaKey) {
-      target = "_blank";
-    }
-
-    if (addressValue.includes(longURL)) {
-      event.preventDefault();
-      generateUrl(addressValue, target, longURL);
-    } else if (addressValue.includes(shortURL)) {
-      event.preventDefault();
-      generateUrl(addressValue, target, shortURL);
+    var currentLocation = window.location.href;
+    var txt = $(event.target).text();
+    if (!(currentLocation.includes("invidio.us/") && txt.includes("Watch on YouTube"))) {
+      var addressValue = $(this).attr("href");
+      var target = $(this).attr("target");
+      console.log("target: " + target);
+      if (event.ctrlKey || event.metaKey) {
+        target = "_blank";
+      }
+      if (addressValue.includes(longURL)) {
+        event.preventDefault();
+        generateUrl(addressValue, target, longURL);
+      } else if (addressValue.includes(shortURL)) {
+        event.preventDefault();
+        generateUrl(addressValue, target, shortURL);
+      }
     }
   });
 });
