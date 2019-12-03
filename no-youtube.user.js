@@ -16,7 +16,8 @@ j(document).ready(function ($) {
   $('a').click(function (event) {
     var currentLocation = window.location.href;
     var txt = $(event.target).text();
-    if (!(currentLocation.includes("invidio.us/") && txt.includes("Watch on YouTube"))) {
+
+    if (!(currentLocation.includes(longURL)) && !(currentLocation.includes("invidio.us/") && txt.includes("Watch on YouTube"))) {
       var addressValue = $(this).attr("href");
       var target = $(this).attr("target");
       console.log("target: " + target);
